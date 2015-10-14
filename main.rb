@@ -5,7 +5,7 @@ require_relative 'lift'
 require_relative 'person'
 
 b = Building.new(
-  name: 'The Building of Life',
+  name: 'Life',
   post_code: 'EH Yo Momma',
   floors: 1000,
   lifts: 4,

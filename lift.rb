@@ -1,11 +1,12 @@
 class Lift
-  attr_accessor :max_people, :current_floor, :name, :occu_pants
+  attr_accessor :max_people, :current_floor, :name
   attr_reader :passengers
 
   def initialize(options={})
   self.current_floor = 0
   self.max_people = 8
   @passengers = []
+  @building = options.fetch :building
   end
 
   #methods: get out, go up, go down
@@ -19,12 +20,11 @@ class Lift
   end
 
   def enter(passenger)
-  #  passengers << passenger unless overloaded?
     passengers << passenger unless overloaded?
   end
 
   def exit(passenger)
-    passengers.shift unless empty?
+    @building.occu_pants << passengers.shift unless empty?
   end
 
   def overloaded?
