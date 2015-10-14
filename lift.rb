@@ -20,7 +20,7 @@ class Lift
 
   def enter(passenger)
   #  passengers << passenger unless overloaded?
-    occu_pants.shift passengers unless overloaded?
+    passengers << passenger unless overloaded?
   end
 
   def exit(passenger)

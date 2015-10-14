@@ -21,6 +21,7 @@ stalin      = Person.new(name: 'Stalin', age: 200, weight: 90, destination: 500)
 bob         = Person.new(name: 'Bob', age: 5, weight: 90, destination: 30)
 mal         = Person.new(name: 'Mak', age: 41, weight: 90, destinatin: 1000)
 cthulu      = Person.new(name: 'Cthulu', age: 30000000000, weight: 90, destination: 1000)
+michael     = Person.new(name: 'Michael', age: 20, weight: 200, destination: 899)
 
 
 
